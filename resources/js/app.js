@@ -18,15 +18,15 @@ import {
 } from 'vform';
 
 //import alert
-// import Swal from 'sweetalert2'
-// window.Swal = Swal;
-// const Toast = Swal.mixim({
-//     toast: true,
-//     position: 'top-end',
-//     showConfirmButton: false,
-//     timer: 3000
-// });
-// window.Toast = Toast;
+ import Swal from 'sweetalert2'
+window.Swal = Swal;
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+});
+window.Toast = Toast;
 
 window.Form= Form;
 Vue.component(HasError.name, HasError)

@@ -38,6 +38,23 @@
                         </a>
                         </td>
                     </tr>
+                     <tr v-for="items in kategoris" :key="items.id">
+                     <td> 
+                      <center></center>
+                     </td>
+                     <td>
+                     <center>
+                       <a href="#" @click="editData(items)" title="Edit Data">
+                         <i class="fas fa-edit blue"></i>
+                       </a>
+                       |
+                       <a  href="#" @click="deleteData(items.id)" title="Hapu Data">
+                          <i class="fas fa-trash-alt red"></i>
+                       </a>
+                       </center>
+                       </td>
+                       </tr>     
+
                     </tbody>
                         </table>
                     </div>
